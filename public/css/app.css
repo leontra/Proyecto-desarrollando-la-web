@@ -6,7 +6,6 @@
 html {
     min-height: 100%;
     position: relative;
-    padding-bottom: 30px;
 
     font-family: 'Oswald', sans-serif;
 }
@@ -19,6 +18,10 @@ html {
 .nav {
     display: block;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: rgba(250, 250, 250, .7);
 }
 
 .nav > div {
@@ -110,4 +113,83 @@ html {
     height: 100%;
     width: 100%;
     position: absolute;
+    z-index: 1;
+}
+
+.mis-lugares-busqueda {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 10px;
+
+    background: white;
+}
+
+.mis-lugares-busqueda > div {
+    display: table;
+    width: 100%;
+}
+
+.mis-lugares-busqueda > div > section {
+    display: inline-block;
+    width: 20%;
+
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.mi-lugar-header {
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.mi-lugar-calificacion {
+    display: inline-block;
+    float: right;
+    background: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-top: 5%;
+    width: 25%;
+}
+
+.mi-lugar-calificacion p {
+    text-align: center;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.mi-lugar-titulo {
+    margin-bottom: 5px;
+}
+
+.mi-lugar-titulo h3 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.mi-lugar-direccion {
+    margin-bottom: 5px;
+}
+
+.mi-lugar-direccion p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #333;
+}
+
+.mi-lugar-ciudad p {
+    display: inline;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mi-lugar-descripcion {
+    width: 90%;
+    margin-left: auto;
 }
