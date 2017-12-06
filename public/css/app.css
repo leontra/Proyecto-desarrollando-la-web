@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 30px;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+#container {
+    width: 100%;
+    display: block;
+}
+
+.nav {
+    display: block;
+    width: 100%;
+}
+
+.nav > div {
+
+    display: flex;    
+    width: 96%;
+    margin: 0 auto;
+}
+
+.nav-titulo {
+    flex: 4;
+}
+
+.nav-titulo > div {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-titulo > div h1 {
+    font-size: 26px;
+    line-height: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-menu {
+    flex: 6;
+}
+
+.nav-menu > div {
+    display: table;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-menu > div > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.buscador {
+    width: 70%;
+}
+
+.buscador .input {
+    float: left;
+    width: 50%;
+}
+
+.input > input {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 28px;
+    font-size: 15px;
+    padding: 3px;
+    border: none;
+}
+
+.input > select {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 15px;
+    line-height: 28px;
+    border: none;
+    padding: 5px;
+    height: 34px;
+}
+
+.login > div {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.login > div button {
+    display: block;
+    width: 60px;
+    line-height: 34px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
