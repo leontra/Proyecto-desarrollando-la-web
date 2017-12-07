@@ -18,7 +18,7 @@ html {
 .nav {
     display: block;
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     z-index: 3;
     background: rgba(250, 250, 250, .7);
@@ -70,7 +70,7 @@ html {
 
 .buscador .input {
     float: left;
-    width: 50%;
+    width: 33%;
 }
 
 .input > input {
@@ -92,6 +92,24 @@ html {
     border: none;
     padding: 5px;
     height: 34px;
+}
+
+.input > button {
+    border: none;
+    background: rgb(77, 77, 77);
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.input > button img {
+    width: 85%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    display: block;
 }
 
 .login > div {
@@ -192,4 +210,121 @@ html {
 .mi-lugar-descripcion {
     width: 90%;
     margin-left: auto;
+}
+
+
+/***** Descripcion *****/
+#descripcionGeneral {
+    display: block;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.secccion-descripcion {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#seccionTitulo {
+    display: table;
+    width: 100%;
+}
+
+.seccion-titulo {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#seccionTitulo .seccion-titulo:nth-child(1) {
+    padding-top: 5%;
+    width: 70%;
+}
+
+#seccionTitulo > div:nth-child(2) { 
+    width: 30%;
+}
+
+.titulo-calif > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    display: inline-block;
+    width: 80%;
+}
+
+.titulo h1 {
+    font-size: 32px;
+    line-height: 50px;    
+    letter-spacing: 1px;
+}
+
+.calificacion {
+    float: right;
+    width: 20%;
+}
+
+.calificacion p {
+    font-size: 46px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.descripcion {
+    margin-top: 20px;
+}
+
+.descripcion-texto {
+    display: block;
+    width: 96%;
+    margin: 0;
+    max-width: 680px;
+}
+
+.descripcion-texto p {
+    font-size: 21px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.imgs-categorias {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.carrusel {
+    width: 90%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.carrusel img {
+    width: 100%;
+    display: block;
+}
+
+.seccion-titulo .imgs-categorias:nth-child(2) {
+    display: block;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.categorias-sub {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.categorias-sub p {
+    display: block;
+    font-size: 21px;
+    line-height: 36px;
 }

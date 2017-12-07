@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sitios, sitios y más sitios</title>
+
+    <link rel="stylesheet" href="https://mapzen.com/js/mapzen.css">
+    <script src="https://mapzen.com/js/mapzen.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+
+</head>
+<body>
+    
+    <div id="container">
+
+        <div class="nav">
+            <div>
+
+                <div class="nav-titulo">
+                    <div>
+                        <h1>Sitios y más sitios</h1>
+                    </div>
+                </div>
+
+                <div class="nav-menu">
+                    <div>
+                        <div class="buscador">
+                            <div class="input">
+                                <input id="lugarBuscar" type="text" placeholder="Lugar" list="listaLugares" />
+                                <datalist id="listaLugares">
+                                    <option value="CDMX">
+                                    <option value="Coyoacán">
+                                    <option value="Tlapan">
+                                    <option value="Álvaro Obregón">
+                                </datalist>
+                            </div>
+                            <div class="input">
+                                <select id="categoriaBuscar">
+                                    <option value="-1" selected>Elegir categoría</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <button>
+                                    <img src="assets/icons/lupita.png" alt="buscador" />
+                                </button>
+                            </div>
+                        </div>                          
+                        <div class="login">
+                            <div>
+                                <button>Login</button>
+                            </div>
+                        </div> <!-- Login -->
+                    </div> <!-- nav-menu > div -->
+                </div> <!-- nav-menu -->
+
+            </div> <!-- nav > div -->
+        </div> <!-- Nav -->
+
+        <div id="descripcionGeneral">
+            <div id="seccionTitulo" class="secccion-descripcion">
+                <div class="seccion-titulo">
+                    <div class="titulo-calif">
+                        <div class="titulo">
+                            <h1>Nuestro Título</h1>
+                        </div>
+                        <div class="calificacion">
+                            <p>8.6</p>
+                        </div>
+                    </div>
+                    <div class="descripcion">
+                        <div class="descripcion-texto">
+                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                                    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="seccion-titulo">
+                    <div class="imgs-categorias">
+                        <div class="carrusel">
+                            <img src="http://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2017/02/comidacasera.jpg" alt="imagen" />
+                        </div>
+                    </div>
+                    <div class="imgs-categorias">
+                        <div class="categorias-sub">
+                            <p>Categoría</p>
+                        </div>
+                        <div class="categorias-sub">
+                            <p>Sub Categoría</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="seccionMapa" class="secccion-descripcion">
+            </div>
+            <div id="seccionComentarios" class="secccion-descripcion">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

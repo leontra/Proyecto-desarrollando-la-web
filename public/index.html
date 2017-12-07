@@ -29,20 +29,23 @@
                     <div>
                         <div class="buscador">
                             <div class="input">
-                                <input type="text" placeholder="Lugar" />
+                                <input id="lugarBuscar" type="text" placeholder="Lugar" list="listaLugares" />
+                                <datalist id="listaLugares">
+                                    <option value="CDMX">
+                                    <option value="Coyoacán">
+                                    <option value="Tlapan">
+                                    <option value="Álvaro Obregón">
+                                </datalist>
                             </div>
                             <div class="input">
-                                <select>
+                                <select id="categoriaBuscar">
                                     <option value="-1" selected>Elegir categoría</option>
-                                    <option value="Arquelogía">Arquelogía</option>
-                                    <option value="Arquelogía">Arquelogía</option>
-                                    <option value="Arquelogía">Arquelogía</option>
-                                    <option value="Arquelogía">Arquelogía</option>
-                                    <option value="Arquelogía">Arquelogía</option>
-                                    <option value="Arquelogía">Arquelogía</option>
-                                    <option value="Arquelogía">Arquelogía</option>
-                                    <option value="Arquelogía">Arquelogía</option>
                                 </select>
+                            </div>
+                            <div class="input">
+                                <button>
+                                    <img src="assets/icons/lupita.png" alt="buscador" />
+                                </button>
                             </div>
                         </div>                          
                         <div class="login">
