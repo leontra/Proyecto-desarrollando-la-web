@@ -131,7 +131,7 @@ html {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
 
 .mis-lugares-busqueda {
@@ -224,6 +224,7 @@ html {
 .secccion-descripcion {
     display: block;
     margin: 0 auto;
+    margin-bottom: 30px;
     width: 100%;
 }
 
@@ -327,4 +328,104 @@ html {
     display: block;
     font-size: 21px;
     line-height: 36px;
+}
+
+#mapContainer {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: peachpuff;
+    height: 300px;
+}
+
+.direccion-container {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 160px;
+    z-index: 1;
+    background: rgba(117, 114, 114, 0.3);
+}
+
+.direccion {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.direccion p {
+    font-size: 16px;
+    line-height: 24px;
+    display: inline;
+}
+
+.comentarios-container {
+    display: table;
+    width: 100%;
+    margin-bottom: 15px;
+
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.comentarios-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.imagenes-container {
+    width: 6%;
+}
+
+.nombre-fecha-container {
+    width: 90%;
+    padding: 10px;
+}
+
+.comentario-img-container {
+    width: 94%;
+    max-width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.comentario-img-container > img {
+    width: 100%;
+}
+
+.nombre {
+    display: inline-block;
+    width: 80%;
+}
+
+.nombre h6 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.fecha {
+    float: right;
+}
+
+.fecha p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgb(55, 55, 55);
+}
+
+.nombre-fecha-opinion {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.opinion p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
 }

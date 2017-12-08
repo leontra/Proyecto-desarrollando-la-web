@@ -96,11 +96,104 @@
                 </div>
             </div>
             <div id="seccionMapa" class="secccion-descripcion">
+                <div id="mapContainer">
+                    <div id="map"></div>
+                    <div class="direccion-container">
+                        <div class="direccion">
+                            <p>Calle / Avenida</p>
+                            <p># 1107</p>
+                        </div>
+                        <div class="direccion">
+                            <p>Colonia</p>
+                            <p>Código Postal</p>
+                        </div>
+                        <div class="direccion">
+                            <p>Estado</p>
+                            <p>Delegación</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="seccionComentarios" class="secccion-descripcion">
+                <section class="comentarios-container">
+                    <div class="comentarios-content imagenes-container">
+                        <div class="comentario-img-container">
+                            <img src="https://images.vexels.com/media/users/3/135247/isolated/preview/e70a6296c2a79dc7a56ab05b103f38e8-signo-del-usuario-con-el-fondo-by-vexels.png" alt="imagen" />
+                        </div>
+                    </div>
+                    <div class="comentarios-content nombre-fecha-container">
+                        <div class="nombre-fecha-opinion">
+                            <div class="nombre">
+                                <h6>Maximiliano Oviedo</h6>
+                            </div>
+                            <div class="fecha">
+                                <p>Noviembre 23, 2017</p>
+                            </div>
+                        </div>
+                        <div class="nombre-fecha-opinion">
+                            <div class="opinion">
+                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="comentarios-container">
+                    <div class="comentarios-content imagenes-container">
+                        <div class="comentario-img-container">
+                            <img src="https://images.vexels.com/media/users/3/135247/isolated/preview/e70a6296c2a79dc7a56ab05b103f38e8-signo-del-usuario-con-el-fondo-by-vexels.png" alt="imagen" />
+                        </div>
+                    </div>
+                    <div class="comentarios-content nombre-fecha-container">
+                        <div class="nombre-fecha-opinion">
+                            <div class="nombre">
+                                <h6>Maximiliano Oviedo</h6>
+                            </div>
+                            <div class="fecha">
+                                <p>Noviembre 23, 2017</p>
+                            </div>
+                        </div>
+                        <div class="nombre-fecha-opinion">
+                            <div class="opinion">
+                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="comentarios-container">
+                    <div class="comentarios-content imagenes-container">
+                        <div class="comentario-img-container">
+                            <img src="https://images.vexels.com/media/users/3/135247/isolated/preview/e70a6296c2a79dc7a56ab05b103f38e8-signo-del-usuario-con-el-fondo-by-vexels.png" alt="imagen" />
+                        </div>
+                    </div>
+                    <div class="comentarios-content nombre-fecha-container">
+                        <div class="nombre-fecha-opinion">
+                            <div class="nombre">
+                                <h6>Maximiliano Oviedo</h6>
+                            </div>
+                            <div class="fecha">
+                                <p>Noviembre 23, 2017</p>
+                            </div>
+                        </div>
+                        <div class="nombre-fecha-opinion">
+                            <div class="opinion">
+                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
     </div>
 </body>
+
+<script>
+    // Add a Mapzen API key
+    L.Mapzen.apiKey = 'mapzen-qb9q8hQ';
+    // Add a map to the 'map' div
+    var map = L.Mapzen.map('map');
+    // Set the center of the map to be the San Francisco Bay Area at zoom level 12
+    map.setView([37.7749, -122.4194], 12);
+</script>
+
 </html>
