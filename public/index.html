@@ -29,7 +29,7 @@
                     <div>
                         <div class="buscador">
                             <div class="input">
-                                <input id="lugarBuscar" type="text" placeholder="Lugar" list="listaLugares" />
+                                <input id="inputLugar" type="text" placeholder="Lugar" list="listaLugares" />
                                 <datalist id="listaLugares">
                                     <option value="CDMX">
                                     <option value="Coyoacán">
@@ -38,12 +38,12 @@
                                 </datalist>
                             </div>
                             <div class="input">
-                                <select id="categoriaBuscar">
+                                <select id="selectCategoria">
                                     <option value="-1" selected>Elegir categoría</option>
                                 </select>
                             </div>
                             <div class="input">
-                                <button>
+                                <button onclick="HacerBusqueda(this)">
                                     <img src="assets/icons/lupita.png" alt="buscador" />
                                 </button>
                             </div>
@@ -61,164 +61,15 @@
 
         <div class="mapa">
             <div id="map"></div>
-            <script>
-                // Add a Mapzen API key
-                L.Mapzen.apiKey = 'mapzen-qb9q8hQ';
-                // Add a map to the 'map' div
-                var map = L.Mapzen.map('map');
-                // Set the center of the map to be the San Francisco Bay Area at zoom level 12
-                map.setView([37.7749, -122.4194], 12);
-            </script>
         </div> <!-- Mapa -->
 
         <div class="mis-lugares-busqueda">
-            <div>
-                <section class="mi-lugar">
-                    <div>
-                        <div class="mi-lugar-header">
-                            <div class="mi-lugar-titulo">
-                                <h3>Las cazuelas</h3>
-                            </div>
-                            <div class="mi-lugar-direccion">
-                                <p>Río Mixcoac #182, col. Miramar, cp 12100</p>
-                            </div>
-                            <div class="mi-lugar-ciudad">
-                                <p>México</p>
-                                <p>CDMX</p>
-                            </div>
-                        </div>
-                        <div class="mi-lugar-calificacion">
-                            <p>8.5</p>
-                        </div>
-                        <div class="mi-lugar-descripcion">
-                            <div>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                            </div>
-                        </div>
-                    </div>     
-                </section>
-                <section class="mi-lugar">
-                    <div>
-                        <div class="mi-lugar-header">
-                            <div class="mi-lugar-titulo">
-                                <h3>Las cazuelas</h3>
-                            </div>
-                            <div class="mi-lugar-direccion">
-                                <p>Río Mixcoac #182, col. Miramar, cp 12100</p>
-                            </div>
-                            <div class="mi-lugar-ciudad">
-                                <p>México</p>
-                                <p>CDMX</p>
-                            </div>
-                        </div>
-                        <div class="mi-lugar-calificacion">
-                            <p>8.5</p>
-                        </div>
-                        <div class="mi-lugar-descripcion">
-                            <div>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                            </div>
-                        </div>
-                    </div>     
-                </section>
-                <section class="mi-lugar">
-                    <div>
-                        <div class="mi-lugar-header">
-                            <div class="mi-lugar-titulo">
-                                <h3>Las cazuelas</h3>
-                            </div>
-                            <div class="mi-lugar-direccion">
-                                <p>Río Mixcoac #182, col. Miramar, cp 12100</p>
-                            </div>
-                            <div class="mi-lugar-ciudad">
-                                <p>México</p>
-                                <p>CDMX</p>
-                            </div>
-                        </div>
-                        <div class="mi-lugar-calificacion">
-                            <p>8.5</p>
-                        </div>
-                        <div class="mi-lugar-descripcion">
-                            <div>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                            </div>
-                        </div>
-                    </div>     
-                </section>
-                <section class="mi-lugar">
-                    <div>
-                        <div class="mi-lugar-header">
-                            <div class="mi-lugar-titulo">
-                                <h3>Las cazuelas</h3>
-                            </div>
-                            <div class="mi-lugar-direccion">
-                                <p>Río Mixcoac #182, col. Miramar, cp 12100</p>
-                            </div>
-                            <div class="mi-lugar-ciudad">
-                                <p>México</p>
-                                <p>CDMX</p>
-                            </div>
-                        </div>
-                        <div class="mi-lugar-calificacion">
-                            <p>8.5</p>
-                        </div>
-                        <div class="mi-lugar-descripcion">
-                            <div>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                            </div>
-                        </div>
-                    </div>     
-                </section>
-                <section class="mi-lugar">
-                    <div>
-                        <div class="mi-lugar-header">
-                            <div class="mi-lugar-titulo">
-                                <h3>Las cazuelas</h3>
-                            </div>
-                            <div class="mi-lugar-direccion">
-                                <p>Río Mixcoac #182, col. Miramar, cp 12100</p>
-                            </div>
-                            <div class="mi-lugar-ciudad">
-                                <p>México</p>
-                                <p>CDMX</p>
-                            </div>
-                        </div>
-                        <div class="mi-lugar-calificacion">
-                            <p>8.5</p>
-                        </div>
-                        <div class="mi-lugar-descripcion">
-                            <div>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                            </div>
-                        </div>
-                    </div>     
-                </section>
-                <section class="mi-lugar">
-                    <div>
-                        <div class="mi-lugar-header">
-                            <div class="mi-lugar-titulo">
-                                <h3>Las cazuelas</h3>
-                            </div>
-                            <div class="mi-lugar-direccion">
-                                <p>Río Mixcoac #182, col. Miramar, cp 12100</p>
-                            </div>
-                            <div class="mi-lugar-ciudad">
-                                <p>México</p>
-                                <p>CDMX</p>
-                            </div>
-                        </div>
-                        <div class="mi-lugar-calificacion">
-                            <p>8.5</p>
-                        </div>
-                        <div class="mi-lugar-descripcion">
-                            <div>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                            </div>
-                        </div>
-                    </div>     
-                </section>
+            <div id="lugaresContainer">
             </div>
         </div> <!-- mis-lugares-busqueda -->
     </div>
 </body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="model/data.js"></script>
+<script src="js/app.js"></script>
 </html>

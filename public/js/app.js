@@ -3,11 +3,8 @@ var selectCategoria = document.getElementById('selectCategoria');
 
 var index = 1;
 
-// Add a Mapzen API key
-L.Mapzen.apiKey = 'api-key';
-// Add a map to the 'map' div
+L.Mapzen.apiKey = 'mapzen-qb9q8hQ';
 var map = L.Mapzen.map('map');
-// Set the center of the map to be the San Francisco Bay Area at zoom level 12
 map.setView([19.356467, -99.139851], 16);
 
 for(var categoria in modelo) {
@@ -57,15 +54,16 @@ function HacerBusqueda(btn) {
 }
 
 function colocarLugares(listaLugares) {
-    console.log('Lista Lugares', listaLugares);
+    //console.log('Lista Lugares', listaLugares);
     //document.getElementById("lugaresContainer").innerHTML='<object type="text/html" data="vistas/lugar.html" ></object>';
     if (listaLugares.length <= 0) return;
 
-    load_home(function(vistaTexto) {
+    load_lugar_plantilla(function(vistaTexto) {
         for(var i = 0; i < listaLugares.length; ++i) {
             var obj = listaLugares[i];
             var lugar = $(vistaTexto);
-            console.log(lugar.find( "#lTitulo" ));
+
+            //Llenado
             lugar.find( "#lTitulo" ).html(obj.titulo);
             lugar.find( "#lCalle" ).html(obj.direccion.calle);
             lugar.find( "#lNumero" ).html(obj.direccion.numero);
@@ -87,9 +85,6 @@ function colocarLugares(listaLugares) {
             lugar.on( "click", function(event) {
                 var index = $( this ).attr('index');
                 var obj = listaLugares[parseInt(index)];
-
-                console.log('OBJ Selected: ', obj);
-
                 location.href = "./descripcion.html?" + obj.id;                
             });
         }
@@ -102,7 +97,7 @@ function colocarLugares(listaLugares) {
 
 }
 
-function load_home (callback) {
+function load_lugar_plantilla (callback) {
     // (e || window.event).preventDefault();
     var con = document.getElementById('content')
     ,   xhr = new XMLHttpRequest();
